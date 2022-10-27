@@ -1,0 +1,447 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Astrality Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Blank Hub"})
+
+-- Global Variables
+
+
+
+getgenv().unlockingmap = false;
+getgenv().autounlockmaps = false;
+getgenv().teleportCFrame = ("");
+getgenv().eggtype = ("")
+getgenv().autoclaimrankreward = false;
+getgenv().autoclaimrandomreward = false;
+-- Functions
+
+function buyegg(eggtype)
+    
+local args = {[1] = {}, [2] = eggtype, [3] = 1}
+game:GetService("ReplicatedStorage").Events.HatchEgg:InvokeServer(unpack(args))
+    
+end
+
+function claimrandomreward()
+
+game:GetService("ReplicatedStorage").Events.ClaimRandomReward:FireServer()
+        
+end  
+
+function claimrankreward()
+
+game:GetService("ReplicatedStorage").Events.ClaimRankReward:FireServer()
+            
+end
+
+function claimrandomreward()
+
+    game:GetService("ReplicatedStorage").Events.ClaimRandomReward:FireServer()
+    
+    end 
+    
+    function redeemcodes()
+    
+    local args = {[1] = "upd15"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+
+    wait(.01)
+    
+    local args = {[1] = "space"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+    
+    wait(.01)
+    
+    local args = {[1] = "50mvisits"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+    
+    wait(.01)
+    
+    local args = {[1] = "spooky"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+    
+    wait(.01)
+    
+    local args = {[1] = "50m"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+    
+    wait(.01)
+    
+    local args = {[1] = "upd12"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+    
+    wait(.01)
+    
+    local args = {[1] = "45m"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+    
+    wait(.01)
+    
+    local args = {[1] = "update11ty"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+    
+    wait(.01)
+    
+    local args = {[1] = "40m"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+    
+    wait(.01)
+    
+    local args = {[1] = "fantasy"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+    
+    wait(.01)
+    
+    local args = {[1] = "35m"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+    
+    wait(.01)
+    
+    local args = {[1] = "30m"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+    
+    wait(.01)
+    
+    local args = {[1] = "secret"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+    
+    wait(.01)
+    
+    local args = {[1] = "update4"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+    
+    wait(.01)
+    
+    local args = {[1] = "update3"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+    
+    wait(.01)
+    
+    local args = {[1] = "update2"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+    
+    wait(.01)
+    
+    local args = {[1] = "update1"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+    
+    wait(.01)
+    
+    local args = {[1] = "release"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+    
+    wait(.01)
+    
+    local args = {[1] = "testing"}game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+
+end
+
+function unlockmaps()
+
+    local part = Instance.new("Part")
+    part.Parent = game.Workspace
+    part.CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+    part.Anchored = true
+    part.CanCollide = falsed
+    part.Transparency = .5
+    
+    wait(.1)
+    
+    local args = {
+        [1] = CFrame.new(-163.98446655273438, 987.5964965820312, -403.33941650390625) * CFrame.Angles(-0, 0, -0)
+    }
+    
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+    
+    wait(3)
+    
+    local args = {
+        [1] = CFrame.new(-179.51564025878906, 1524.6309814453125, -682.4987182617188) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
+    }
+    
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+    
+    wait(3)
+    
+    local args = {
+        [1] = CFrame.new(-264.35888671875, 2123.06298828125, -694.6613159179688) * CFrame.Angles(3.1415927410125732, -0, -3.1415927410125732)
+    }
+    
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+    
+    
+    wait(3)
+    
+    local args = {
+        [1] = CFrame.new(-201.77197265625, 2944.481689453125, -470.40875244140625) * CFrame.Angles(0, 1.5707963705062866, 0)
+    }
+    
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+    
+    
+    wait(3)
+    
+    local args = {
+        [1] = CFrame.new(-166.28515625, 4235.38916015625, -779.1531372070312) * CFrame.Angles(0, 1.5707963705062866, 0)
+    }
+    
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+    
+    
+    wait(3)
+    
+    local args = {
+        [1] = CFrame.new(-276.2012634277344, 5425.62158203125, -480.28778076171875) * CFrame.Angles(0, 1.5707963705062866, 0)
+    }
+    
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+    
+    
+    wait(3)
+    
+    local args = {
+        [1] = CFrame.new(-243.2586669921875, 8376.5166015625, -483.8897705078125) * CFrame.Angles(0, 1.5707963705062866, 0)
+    }
+    
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+    
+    wait(3)
+    
+    local args = {
+        [1] = CFrame.new(-253.30348205566406, 11262.8818359375, -237.8885955810547) * CFrame.Angles(0, 1.5707963705062866, 0)
+    }
+    
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+    
+    wait(3)
+    
+    local args = {
+        [1] = CFrame.new(-511.0211181640625, 13812.0322265625, -543.2418212890625) * CFrame.Angles(-0, -1.5707963705062866, 0)
+    }
+    
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+    
+    
+    wait(3)
+    
+    local args = {
+        [1] = CFrame.new(-408.697509765625, 17180.138671875, -552.0464477539062) * CFrame.Angles(0, 1.5707963705062866, 0)
+    }
+    
+    game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+    
+    
+    
+    wait(3)
+    
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = part.CFrame
+    
+    part:Destroy()    
+
+    getgenv().unlockingmap = false
+    
+end
+
+    
+
+            
+
+local Tab = Window:MakeTab({
+	Name = "Auto",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "AutoTap",
+	Default = false,
+	Callback = function(t)
+        _G.autoclicker = t
+        while _G.autoclicker == true do
+            game:GetService("ReplicatedStorage").Events.Tap:FireServer()
+        wait()
+        end
+	end    
+})
+
+Tab:AddToggle({
+    Name = "Auto Claim Rank Reward",
+    Default = false,
+    Callback = function(Value)
+    if Value == true then
+    getgenv().autoclaimrankreward = true
+    else
+    getgenv().autoclaimrankreward = false
+    end
+    while getgenv().autoclaimrankreward == true do      
+    claimrankreward()
+    wait()
+    end
+    end    
+    })
+    
+    Tab:AddToggle({
+        Name = "Auto Claim Random Reward",
+        Default = false,
+        Callback = function(Value)
+        if Value == true then
+        getgenv().autoclaimrandomreward = true
+        else
+        getgenv().autoclaimrandomreward = false
+        end
+        while getgenv().autoclaimrandomreward == true do      
+        claimrandomreward()
+        wait()
+        end
+        end    
+        })
+
+        local Section = Tab:AddSection({
+            Name = "Other"
+        })
+
+        Tab:AddDropdown({
+            Name = "Dropdown",
+            Default = "1",
+            Options = {"1","5","20","100","500","2000","4500","8000","12500","18000","24500","32000","40500","50000","1000000"},
+            Callback = function(t)
+                getgenv().ReAmount = t
+            end    
+        })
+
+        
+        Tab:AddToggle({
+            Name = "Auto Rebirth",
+            Default = false,
+            Callback = function(t)
+                _G.autorebirth = t
+                while _G.autorebirth == true do wait()
+                    local args = {[1] = getgenv().ReAmount}
+                        game:GetService("ReplicatedStorage").Events.Rebirth:FireServer(unpack(args))
+                    wait()
+                end
+            end   
+        })
+
+
+
+
+local Tab = Window:MakeTab({
+	Name = "Eggs",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddDropdown({
+	Name = "Select",
+	Default = "1",
+	Options = {"Starter", "Jungle Egg", "Flower Egg Robux", "Bee Egg", "Swamp Egg", "Snow Egg", "Desert Egg", "Death Egg Robux", "Death Egg", "Forest Egg Robux", "Forest Egg", "Dominus Egg", "Wood Egg", "Mine Egg", "Beach Egg", "Beach Egg Robux", "Dark Egg", "Cloud Egg", "Magma Egg", "Fire Egg", "Coral Egg", "Molten Egg", "Underworld Egg", "Blue Magma Egg", "Red Magma Egg", "Secret Magma Egg", "Purple Magma Egg", "Yellow Magma Egg", "55M Egg", "Candy Egg", "Flora Egg", "Holy Wood Egg", "Coral Egg", "Holy Bee Egg", "Holy Egg", "Castle Egg", "50M2 Egg", "Festival Egg", "Japan Egg", "Station Egg", "Robo Egg", "Alien Egg", "Frost Alien Egg", "Toxic Alien Egg","60M Egg","65M Egg"},
+	Callback = function(Value)
+	getgenv().eggtype = Value
+	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Actions"
+})
+
+Tab:AddButton({
+	Name = "Hatch",
+	Callback = function()
+      	buyegg(getgenv().eggtype)
+        print(getgenv().eggtype)
+  	end    
+})
+
+
+Tab:AddToggle({
+    Name = "Auto Hatch",
+    Default = false,
+    Callback = function(Value)
+    if Value == true then
+    getgenv().autorehatch = true
+    else
+    getgenv().autorehatch = false
+    end
+    while getgenv().autorehatch == true do      
+    buyegg(getgenv().eggtype)
+    wait()
+    end
+    end    
+    })
+    
+
+local Tab = Window:MakeTab({
+	Name = "Teleport",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddDropdown({
+	Name = "Teleport",
+	Default = "1",
+	Options = {"Forest Island","Flower Island","Swamp Island","Snow Island","Desert Island","Death Island","Beach Island","Mines Island","Cloud Island","Coral Island","DarkHeart Island","FlameHeart Island","Molten Island","Blue Magma Island","Purple Magma Island","Red Magma"},
+	Callback = function(Value)
+		getgenv().TPPlace = Value
+	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Actions"
+})
+
+Tab:AddButton({
+	Name = "Teleport",
+	Callback = function()
+      		if getgenv().TPPlace == "Forest Island" then 
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-164.334946, 977.697937, -393.400604, 1, -7.45565565e-09, 5.77300525e-05, 7.4602946e-09, 1, -8.03559246e-08, -5.77300525e-05, 8.0356358e-08, 1)
+            elseif getgenv().TPPlace == "Flower Island" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-179.51564, 1514.62427, -682.498718, -1, 2.73031309e-09, -7.80852005e-08, 2.73031375e-09, 1, -7.86028131e-09, 7.80852005e-08, -7.8602822e-09, -1)
+            elseif getgenv().TPPlace == "Swamp Island" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-264.358887, 2123.06299, -694.661316, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+elseif getgenv().TPPlace == "Snow Island" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-201.771973, 2934.42432, -470.408752, -1.17961874e-13, -6.41638565e-08, 1, -1.79041244e-08, 1, 6.41638565e-08, -1, -1.79041244e-08, -1.19110681e-13)
+elseif getgenv().TPPlace == "Desert Island" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-166.285156, 4235.38916, -779.153137, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+elseif getgenv().TPPlace == "Death Island" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-276.201263, 5425.62158, -480.287781, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+elseif getgenv().TPPlace == "Beach Island" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-140.345093, 6881.63086, -495.682129, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+elseif getgenv().TPPlace == "Mines Island" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-243.258667, 8366.05762, -483.889771, -8.60899622e-14, -1.35065292e-08, 1, -1.06599479e-07, 1, 1.35065292e-08, -1, -1.06599479e-07, -8.75297488e-14)
+elseif getgenv().TPPlace == "Cloud Island" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-253.303482, 11262.8818, -237.888596, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+elseif getgenv().TPPlace == "Coral Island" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-511.021118, 13812.0322, -543.241821, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+elseif getgenv().TPPlace == "DarkHeart Island" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-408.69751, 17180.1387, -552.046448, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+elseif getgenv().TPPlace == "FlameHeart Island" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1137.61401, 170.300522, -2859.72534, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+elseif getgenv().TPPlace == "Molten Island" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1280.59583, 2193.82812, -2885.14429, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+elseif getgenv().TPPlace == "Blue Magma Island" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1399.28955, 5230.66162, -2948.08301, -0.463734388, -3.75528764e-09, 0.885974288, -9.30326181e-08, 1, -4.44562964e-08, -0.885974288, -1.03040421e-07, -0.463734388)
+elseif getgenv().TPPlace == "Purple Magma Island" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1319.70276, 7662.0249, -2958.05762, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+elseif getgenv().TPPlace == "Yellow Magma Island" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1403.54407, 10404.0977, -2903.13843, -0.707134247, 0, 0.707079291, 0, 1, 0, -0.707079291, 0, -0.707134247)
+elseif getgenv().TPPlace == "Red Magma Island" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1422.93677, 13344.4121, -2897.62183, -0.696897686, -5.03294046e-08, 0.717170537, -9.96512881e-08, 1, -2.66566236e-08, -0.717170537, -9.00439048e-08, -0.696897686)
+end
+end})
+
+local Tab = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Redeem Codes",
+	Callback = function()
+redeemcodes()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Unlock Maps",
+	Callback = function()
+
+if getgenv().unlockingmap == false then
+
+        getgenv().unlockingmap = true
+        notice("Please Wait", "Unlocking...")
+      	unlockmaps()
+
+else
+
+    print("Running")
+    notice("Please Wait", "Unlocking...")
+
+end
+  	end    
+})
+
+
+OrionLib:Init()
