@@ -316,7 +316,7 @@ local Tab = Window:MakeTab({
 Tab:AddDropdown({
 	Name = "Select",
 	Default = "1",
-	Options = {"Starter", "Jungle Egg", "Flower Egg Robux", "Bee Egg", "Swamp Egg", "Snow Egg", "Desert Egg", "Death Egg Robux", "Death Egg", "Forest Egg Robux", "Forest Egg", "Dominus Egg", "Wood Egg", "Mine Egg", "Beach Egg", "Beach Egg Robux", "Dark Egg", "Cloud Egg", "Magma Egg", "Fire Egg", "Coral Egg", "Molten Egg", "Underworld Egg", "Blue Magma Egg", "Red Magma Egg", "Secret Magma Egg", "Purple Magma Egg", "Yellow Magma Egg", "55M Egg", "Candy Egg", "Flora Egg", "Holy Wood Egg", "Coral Egg", "Holy Bee Egg", "Holy Egg", "Castle Egg", "50M2 Egg", "Festival Egg", "Japan Egg", "Station Egg", "Robo Egg", "Alien Egg", "Frost Alien Egg", "Toxic Alien Egg","60M Egg","65M Egg"},
+	Options = {"Starter", "Jungle Egg", "Flower Egg Robux", "Bee Egg", "Swamp Egg", "Snow Egg", "Desert Egg", "Death Egg Robux", "Death Egg", "Forest Egg Robux", "Forest Egg", "Dominus Egg", "Wood Egg", "Mine Egg", "Beach Egg", "Beach Egg Robux", "Dark Egg", "Cloud Egg", "Magma Egg", "Fire Egg", "Coral Egg", "Molten Egg", "Underworld Egg", "Blue Magma Egg", "Red Magma Egg", "Secret Magma Egg", "Purple Magma Egg", "Yellow Magma Egg", "55M Egg", "Candy Egg", "Flora Egg", "Holy Wood Egg", "Coral Egg", "Holy Bee Egg", "Holy Egg", "Castle Egg", "50M2 Egg", "Festival Egg", "Japan Egg", "Station Egg", "Robo Egg", "Alien Egg", "Frost Alien Egg", "Toxic Alien Egg","65M Egg","70M Egg"},
 	Callback = function(Value)
 	getgenv().eggtype = Value
 	end    
